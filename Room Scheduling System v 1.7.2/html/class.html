@@ -1,0 +1,381 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>class</title>
+
+
+    <!--Style Support-------------------------------------------------------------->
+    <link rel="stylesheet" href="../library/bootstrap.3.3.6/styles/bootstrap.min.css" />
+    <!--Validation-->
+    <link rel="stylesheet" href="../library/formvalidation-master/src/css/formValidation.css" />
+    <!--Custom Style-->
+    <link rel="stylesheet" href="../css/style_index.css">
+    <!--End Style Support---------------------------------------------------------->
+
+
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <!--set middile step 1-->
+            <div class="col-md-4 col-md-offset-4">
+                <!--set the container in middile-->
+                <selection>
+                    <form class="panel panel-primary" id="addClass">
+                        <div class="panel-heading">Enter Class Data</div>
+
+                        <div class="panel-body">
+
+
+                            <!--Combo Boxs Subject-->
+                            <div class="form-group">
+                                <label class="control-label">Subject:</label>
+
+                                <div class="col-lg-14">
+                                    <select name="cboSubject1" id="cboSubject" class="form-control">
+                                        <!--ID place here -->
+                                        <!--added a couple course options-->
+                                        <option value="">Select a Subject</option>
+                                        <option value="ACT">ACT</option>
+                                        <!--<option value="AFA">AFA</option> subject not listed in SCC directory-->
+                                        <option value="ANT">ANT</option>
+                                        <option value="ATR">ART</option>
+                                        <option value="BIO">BIO</option>
+                                        <option value="BTC">BTC</option>
+                                        <option value="BUS">BUS</option>
+                                        <option value="CHM">CHM</option>
+                                        <option value="COL">COL</option>
+                                        <option value="CPC">CPC</option>
+                                        <option value="CPM">CPM</option>
+                                        <option value="CPT">CPT</option>
+                                        <!--<option value="CS">CS</option>
+    <option value="DAN">DAN</option> subject not listed-->
+                                        <option value="ECO">ECO</option>
+                                        <option value="EDU">EDU</option>
+                                        <option value="ENG">ENG</option>
+                                        <option value="GEO">GEO</option>
+                                        <option value="HIS">HIS</option>
+                                        <option value="LIT">LIT</option>
+                                        <option value="MAT">MAT</option>
+                                        <option value="MST">MST</option>
+                                        <option value="MUS">MUS</option>
+                                        <option value="PHL">PHL</option>
+                                        <option value="PHE">PHE</option>
+                                        <option value="PHY">PHY</option>
+                                        <option value="POL">POL</option>
+                                        <option value="PSY">PSY</option>
+                                        <option value="SOC">SOC</option>
+                                        <option value="SPE">SPE</option>
+                                        <option value="THE">THE</option>
+
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+
+                            <!--Input Boxs Avalibility Courses Number-->
+                            <div class="form-group">
+                                <label class="control-label">Courses Number:</label>
+
+                                <input type="text" class="form-control" placeholder="120-4016"
+                                       id="txtCoursesNum" pattern="[-]{0,9}"
+                                       name="txtCoursesNum1" />
+                            </div>
+
+                            <!--Input Boxs Avalibility Credits-->
+                            <div class="form-group">
+                                <label class="control-label">Credits:</label>
+
+                                <input type="number" class="form-control" placeholder="3"
+                                       id="txtCredits" name="txtCredits1" />
+                            </div>
+
+
+                            <!-----------------Check Boxs Group Date of the Week--------------------------->
+                            <!--Check Boxs Monday-->
+                            <div class="form-group">
+                                <div class="col-lg-5 col-lg-offset-0">
+                                    <label>
+                                        <input type="checkbox" id="chkMonday" name="chkWeekDay[]" value="monday"> Monday
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!--Check Boxs Tuesday-->
+                            <div class="form-group">
+                                <div class="col-lg-5 col-lg-offset-0">
+                                    <label>
+                                        <input type="checkbox" id="chkTuesday" name="chkWeekDay[]" value="tuesday"> Tuesday
+                                    </label>
+                                </div>
+                            </div>
+                            <!--Check Boxs Wednesday-->
+                            <div class="form-group">
+                                <div class="col-lg-5 col-lg-offset-0">
+                                    <label>
+                                        <input type="checkbox" id="chkWednesday" name="chkWeekDay[]" value="wednesday"> Wednesday
+                                    </label>
+                                </div>
+                            </div>
+                            <!--Check Boxs Tjusday-->
+                            <div class="form-group">
+                                <div class="col-lg-5 col-lg-offset-0">
+                                    <label>
+                                        <input type="checkbox" id="chkThusday" name="chkWeekDay[]" value="thusday"> Thusday
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!--Check Boxs Friday-->
+                            <div class="form-group">
+                                <div class="col-lg-5 col-lg-offset-0">
+                                    <label>
+                                        <input type="checkbox" id="chkFriday" name="chkWeekDay[]" value="friday"> Friday
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!--Check Boxs Saturday-->
+                            <div class="form-group">
+                                <div class="col-lg-5 col-lg-offset-0">
+                                    <label>
+                                        <input type="checkbox" id="chkSaturday" name="chkWeekDay[]" value="saturday"> Saturday
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <!--Combo Boxs Avalibility Start Time-->
+                            <div class="form-group">
+                                <label class="control-label">Availability From:</label>
+
+                                <div class="col-lg-14">
+                                    <select name="cboAvailabilityFrom1" id="cboAvailabilityFrom" class="form-control">
+                                        <!--ID place here -->
+                                        <option value="">Select a starting time</option>
+                                        <option value="800">08:00AM</option>
+                                        <option value="850">08:30AM</option>
+                                        <option value="900">09:00AM</option>
+                                        <option value="950">09:30AM</option>
+                                        <option value="1000">10:00AM</option>
+                                        <option value="1050">10:30AM</option>
+                                        <option value="1100">11:00AM</option>
+                                        <option value="1150">11:30AM</option>
+                                        <option disabled="disabled">------------</option>
+                                        <option value="1200">12:00PM</option>
+                                        <option value="1250">12:30PM</option>
+                                        <option value="1300">01:00PM</option>
+                                        <option value="1350">01:30PM</option>
+                                        <option value="1400">02:00PM</option>
+                                        <option value="1450">02:30PM</option>
+                                        <option value="1500">03:00PM</option>
+                                        <option value="1550">03:30PM</option>
+                                        <option value="1600">04:00PM</option>
+                                        <option value="1650">04:30PM</option>
+                                        <option value="1700">05:00PM</option>
+                                        <option value="1750">05:30PM</option>
+                                        <option value="1800">06:00PM</option>
+                                        <option value="1850">06:30PM</option>
+                                        <option value="1900">07:00PM</option>
+                                        <option value="1950">07:30PM</option>
+                                        <option value="2000">08:00PM</option>
+                                        <option value="2050">08:30PM</option>
+                                        <option value="2100">09:00PM</option>
+                                        <option value="2150">09:30PM</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <!--Combo Boxs Avalibility End Time-->
+                            <div class="form-group">
+                                <label class="control-label">Availability To:</label>
+
+                                <div class="col-lg-14">
+                                    <select name="cboAvailabilityTo1"
+                                            id="cboAvailabilityTo"
+                                            class="form-control">
+                                        <!--ID place here -->
+                                        <option value="">Select a ending time</option>
+                                        <option value="800">08:00AM</option>
+                                        <option value="850">08:30AM</option>
+                                        <option value="900">09:00AM</option>
+                                        <option value="950">09:30AM</option>
+                                        <option value="1000">10:00AM</option>
+                                        <option value="1050">10:30AM</option>
+                                        <option value="1100">11:00AM</option>
+                                        <option value="1150">11:30AM</option>
+                                        <option disabled="disabled">------------</option>
+                                        <option value="1200">12:00PM</option>
+                                        <option value="1250">12:30PM</option>
+                                        <option value="1300">01:00PM</option>
+                                        <option value="1350">01:30PM</option>
+                                        <option value="1400">02:00PM</option>
+                                        <option value="1450">02:30PM</option>
+                                        <option value="1500">03:00PM</option>
+                                        <option value="1550">03:30PM</option>
+                                        <option value="1600">04:00PM</option>
+                                        <option value="1650">04:30PM</option>
+                                        <option value="1700">05:00PM</option>
+                                        <option value="1750">05:30PM</option>
+                                        <option value="1800">06:00PM</option>
+                                        <option value="1850">06:30PM</option>
+                                        <option value="1900">07:00PM</option>
+                                        <option value="1950">07:30PM</option>
+                                        <option value="2000">08:00PM</option>
+                                        <option value="2050">08:30PM</option>
+                                        <option value="2100">09:00PM</option>
+                                        <option value="2150">09:30PM</option>
+
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <!--Input Boxs Student Capacity-->
+                            <div class="form-group">
+                                <label class="control-label">Student Capacity:</label>
+
+                                <input type="number" class="form-control"
+                                       id="txtStuCap"
+                                       placeholder="25" name="txtStuCap1" />
+                            </div>
+
+
+
+
+
+                            <!--Input Boxs Specialization-->
+                            <div class="form-group">
+                                <label class="control-label">Specialization</label>
+                                <div class="col-lg-14">
+                                    <select name="cboSpec1" id="cboSpec" class="form-control">
+                                        <option value="">Select a specialization</option>
+                                        <option value="Lab">Lab</option>
+                                        <option value="Boxing">Boxing</option>
+                                        <option value="Dancing">Dancing</option>
+                                        <option value="Recording">Recording</option>
+                                        <option value="Photo_Processing">Photo Processing</option>
+                                        <option value="Workshop_Jewelry">Workshop Jewelry</option>
+                                        <option value="Workshop_Pottery">Workshop Pottery</option>
+                                        <option value="Workshop_Machinery">Workshop Machinery</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <!-----------------Check Boxs Group Class Property--------------------------->
+                            <!--Check Boxs Computer-->
+                            <div class="form-group">
+                                <div class="col-lg-5 col-lg-offset-0">
+                                    <label>
+                                        <input type="checkbox" id="chkComputer" name="chkComputer1" value="computer"> Computer
+                                    </label>
+                                </div>
+                            </div>
+                            <!--Check Boxs Media Center-->
+                            <div class="form-group">
+                                <div class="col-lg-5 col-lg-offset-0">
+                                    <label>
+                                        <input type="checkbox" id="chkMediaCenter" name="chkMediaCenter1" value="MediaCenter"> Media Center
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!--Check Box Smart Board-->
+                            <div class="form-group">
+                                <div class="col-lg-5 col-lg-offset-0">
+                                    <label>
+                                        <input type="checkbox" id="chkSmartBoard" name="chkSmartBoard1" value="computer"> Smart Board
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!--Check Boxs Projecter-->
+                            <div class="form-group">
+                                <div class="col-lg-5 col-lg-offset-0">
+                                    <label>
+                                        <input type="checkbox" id="chkProjector" name="chkProjector1" value="computer"> Projector
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <!--End Check Boxs Group-->
+
+
+                            <div class="col-lg-6 col-lg-offset-2">
+                                <hr> <!--Line Break-->
+                            </div>
+
+
+                            <!--Button Add Class-->
+                            <div class="col-lg-0 col-lg-offset-0">
+                                <!--Set both to 0 = max length-->
+                                <button type="submit"
+                                        onclick="saveClassData()"
+                                        class="form-control btn btn-primary">
+                                    Add Class
+                                </button>
+                            </div>
+                            <!--End Button-->
+
+
+                        </div><!--End Panel Body-->
+
+                    </form><!--End Form-->
+
+                </selection>
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <!--info Notification Area-->
+        <div class="col-md-8 col-md-offset-2">
+            <div id="cInfo"></div>
+        </div>
+
+
+
+            </div><!--End container-->
+
+
+
+
+
+
+
+    <!--Script Support:--------------------------------------------------------->
+    <!--Bootstrap -->
+    <script src="../library/google/scripts/jquery.min.js"></script>
+    <script src="../library/bootstrap.3.3.6/scripts/bootstrap.min.js"></script>
+    <!--Validation-->
+    <script src="../library/formvalidation-master/dist/js/formValidation.min.js"></script>
+    <script src="../library/formvalidation-master/dist/js/formValidation.js"></script>
+    <script src="../library/formvalidation-master/dist/js/framework/bootstrap.js"></script>
+    <!--Message Box-->
+    <script src="../scripts/scripts_Library/bootbox.min.js"></script>
+    <!--Custom Script: --------------------------->
+    <script src="../scripts/validationClass.js"></script>
+    <script src="../scripts/class.js"></script>
+    <!--<!--End Script Support:-------------------------------------------------->
+
+
+</body>
+</html>

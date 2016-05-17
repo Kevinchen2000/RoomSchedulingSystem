@@ -1,0 +1,27 @@
+********WebFinalSample*****************************************************************
+Version: 1.3 
+Modify date: 04/27/2016
+Editor: Kevin
+***************************************************************************************
+______Add Features_____________________________________________________________________
+
+------Java Script 
+Add <script src="../scripts/scheduling.plugin.v10.js"></script> support under result
+Provided and link between scheduling.plugin and localstorage  
+Get data from scheduling.plugin reformate the data and inserted into Gen table.
+
+Fix table undefined error 
+
+------UI:
+1. under Result Tab:
+  Schedule button (green) Now 100% function.
+
+2. Table display formatted time (12HR) and class name + course # on the table
+
+_____Deprecated Features_______________________________________________________________
+
+------UI:
+1. under Result Tab:
+
+Deprecated Link <script src="../scripts/scheduling.plugin.v09.js"></script> 
+

@@ -1,0 +1,28 @@
+********WebFinalSample*****************************************************************
+Version: 1.2 
+Modify date: 04/24/2016
+Editor: Kevin
+***************************************************************************************
+______Add Features_____________________________________________________________________
+
+------Java Script 
+Change room primary key to building name + room number.
+Change class primary key to subject + course number.
+Add additional object identifier (¡°room¡±/¡±class¡±) to help identify Local Storage   object 
+Change JQuery library from 1.7v to 2.2v
+
+------UI:
+1. under Result Tab:
+Add dynamic table
+Add schedule button UI (color: green)
+
+
+_____Deprecated Features_______________________________________________________________
+
+------UI:
+
+1. under Class Tab:
+Deprecated: bootbox.dialog to basic alert box
+
+2. under Room Tab:
+Deprecated: bootbox.dialog to basic alert box

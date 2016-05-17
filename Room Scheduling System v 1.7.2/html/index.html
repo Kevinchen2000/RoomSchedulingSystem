@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+
+
+    <!--Style Support-------------------------------------------------------------->
+    <link rel="stylesheet" href="../library/bootstrap.3.3.6/styles/bootstrap.min.css" />
+    <!--Validation-->
+    <link rel="stylesheet" href="../library/formvalidation-master/src/css/formValidation.css" />
+    <!--Custom Style-->
+    <link rel="stylesheet" href="../css/style_index.css">
+    <!--End Style Support---------------------------------------------------------->
+
+
+</head>
+
+
+<body>
+
+<div class="container-flow">  <!--Header Img-->
+    <div class="row" padding-right="0" padding-left="0"> 
+        <div class="col-sm-12">
+
+            <div id="my-slider" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="lightBlue.jpg" width="9999999" height="160"
+                             alt="hrImg">
+                        <div class="carousel-caption">
+                            <h1>Schedule Your Room Today</h1>
+                            <p>Welcome to Room Scheduling System</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!--End Header img-->
+
+
+
+
+
+
+<div class="container">
+    <hr>
+</div>
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+
+    <div class="container" background-color: #eaf0f2;>
+
+        <!--handel mobile screen for nav-->
+        <div class="navbar-header"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a href="index.html" class="navbar-brand">Scheduling System</a>
+
+        </div> <!--End mobile handel-->
+
+
+        <!-- Nav collapse  items -->
+        <div class="collapse navbar-collapse" id="mainNavBar">
+            <ul class="nav navbar-nav navbar-left">
+
+
+                <li class="active">
+                    <a href="index.html">Home</a></li>
+               
+                <li><a href="room.html" target="indexFrame">Room</a></li>
+                <li><a href="class.html" target="indexFrame">Class</a></li>  
+                <li><a href="result.html" target="indexFrame">Result</a></li>
+
+
+            </ul>
+
+             <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="about.html" target="indexFrame">About</a></li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Help
+                        <span class="caret"></span></a>
+
+
+                    <ul class="dropdown-menu">
+
+                        <li><a href="help.html" target="indexFrame">Help</a></li>
+                        <li><a href="team.html" target="indexFrame">Team</a></li>
+
+                        <li role="separator" class="divider"></li>
+                        
+                        <li><a href="contact.html" target="indexFrame">Contact</a></li>
+                        <li><a href="diagram.html" target="indexFrame">Diagram</a></li>
+                        
+
+                    </ul>
+                
+     
+           
+            </ul>
+        </div><!--End Nav collapse  items -->
+       
+
+    </div>
+
+</nav><!--End navigation bar-->
+
+
+        <!--iframe use to display room, class and result tab-->
+            <iframe name="indexFrame" align="middle" 
+                    frameborder="0" 
+                    scrolling="yes" 
+                    class="transparantbg"
+                    width="1000"
+                    height="1600"
+                    ></iframe>
+    
+        <!--End iframe-->
+
+
+
+    <!--info Notification Area-->
+    <div class="col-md-8 col-md-offset-2">
+        <div id="hInfo"></div>
+    </div>
+
+
+
+    <!--Footer-->
+    <footer class="footer-basic-centered">
+        
+           <p class="footer-company-motto">The Room Scheduling Program</p>
+            <p class="footer-links">
+                <a href="index.html">Home</a> 
+                <a href="help.html">Help</a>  
+                <a href="contact.html">Contact</a>  
+                <a href="about.html">About</a>
+                <a href="#">Top</a>
+
+        </p>
+                <p class="footer-company-name">ACK Team at SCC © 2016</p>
+                
+        
+    </footer><!--End Footer-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Script Support:--------------------------------------------------------->
+    <!--Bootstrap -->
+    <script src="../library/google/scripts/jquery.min.js"></script>
+    <script src="../library/bootstrap.3.3.6/scripts/bootstrap.min.js"></script>
+    <!--Validation-->
+    <script src="../library/formvalidation-master/dist/js/formValidation.min.js"></script>
+    <script src="../library/formvalidation-master/dist/js/formValidation.js"></script>
+    <script src="../library/formvalidation-master/dist/js/framework/bootstrap.js"></script>
+    <!--Message Box-->
+    <script src="../scripts/scripts_Library/bootbox.min.js"></script>
+    <!--Custom Script: --------------------------->
+    <script src="../scripts/room.js"></script>
+    <!--<!--End Script Support:-------------------------------------------------->
+
+
+    </body>
+
+  
+
+
+</html>

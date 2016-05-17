@@ -1,0 +1,242 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>class</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>  
+
+
+
+    <!--Style Support-------------------------------------------------------------->
+    <link rel="stylesheet" href="../library/bootstrap.3.3.6/styles/bootstrap.min.css" />
+    <!--Validation-->
+    <link rel="stylesheet" href="../library/formvalidation-master/src/css/formValidation.css" />
+    <!--Custom Style-->
+    <link rel="stylesheet" href="../css/style_index.css">
+    <!--End Style Support---------------------------------------------------------->
+
+
+</head>
+
+<body>
+
+
+
+
+    <div class="container">
+
+
+        <div class="panel panel-primary panel-responsive">
+            <div class="panel-heading">Schedule Result</div>
+            <div class="panel-body">
+
+
+                <div class="navbar navbar-default">
+
+                    <!--Navbar Start-->
+                    <form class="navbar-form navbar-right" role="search">
+
+              
+
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Sort
+                                <span class="caret"></span>
+                            </button>
+
+                            <!--Dropdown Menu Sort-->
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a id="lblSortAZ" onclick="sortAZ()">Sort by A-Z</a></li>
+
+                                <li role="separator" class="divider"></li>
+
+                                <li><a id="lblSortPriorityUp" onclick="sortPriorityUp()">Sort by Priority +</a></li>
+                                <li><a id="lblSortPriorityDown" onclick="sortPriorityDown()">Sort by Priority -</a></li>
+
+                                <li role="separator" class="divider"></li>
+
+                                <li><a id="lblSortTimeUp" onclick="sortTimeUp()">Sort by Time +</a></li>
+                                <li><a id="lblSortTimeDown" onclick="sortTimeDown()">Sort by Time -</a></li>
+
+                                <li role="separator" class="divider"></li>
+
+                                <li><a id="lblSortDurationUp" onclick="sortDurationUp()">Sort by Duration +</a></li>
+                                <li><a id="lblSortDurationDown" onclick="lSortDurationDown()">Sort by Duration -</a></li>
+
+                                <li role="separator" class="divider"></li>
+                                
+                                <li><a id="lblClear" onclick="clearAllData()">Clear all data</a></li>
+                            </ul>
+                            <!--End Dropdown Menu-->
+                        </div>
+                    </form>
+
+
+
+
+                    <form class="navbar-form navbar-left" role="search">
+
+                        <button type="submit" class="btn btn-success" id="btnSchedule1"
+                                >Schedule</button>
+                    </form>
+
+
+                        <!--Navbar End-->
+                        <!--Search form-->
+                        <form class="navbar-form navbar-right" role="search">
+
+                            <div class="form-group">
+                                <!--Input Box Search-->
+
+
+
+                                <input type="text" class="form-control" id="txtSearch" name="txtSearch1" placeholder="Search">
+                            </div>
+
+                            <!--Button search-->
+                            <button type="submit" class="btn btn-default" id="btnSearch">Submit</button>
+
+                        </form><!--End Search form-->
+
+
+
+
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuTable"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Views
+                                <span class="caret"></span>
+                            </button>
+                            <!--Dropdown Menu Sort-->
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuTable">
+                                <li><a id="generalTable">General</a></li>
+                                <li><a id="detailTable">Detail</a></li>
+
+                            </ul><!--End Dropdown Menu-->
+                        </div>
+                    </form>
+
+
+
+                        <form class="navbar-form navbar-left" role="search">
+
+                            <h5>
+                                <span class="label  label-primary"
+                                                    id="lblCurrentyTable"></span>
+                            </h5>
+                        </form>
+
+
+</div>
+
+
+
+
+
+                <!--Table Start---------------------------------------------------------------------------------------------------------------------------->
+                <table id="resultTable"class="table table-bordered table-hover table-responsive">
+              
+                 
+                </table>
+                <!--Table End-->
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+        <!--info Notification Area-->
+        <div class="col-md-8 col-md-offset-2">
+            <div id="reInfo"></div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script>
+        x="Ok21"
+        // document.getElementById("r00").innerHTML = x; //output to label
+        
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Script Support:--------------------------------------------------------->
+    <!--Bootstrap -->
+    <script src="../library/google/scripts/jquery.min.js"></script>
+    <script src="../library/bootstrap.3.3.6/scripts/bootstrap.min.js"></script>
+    <!--Validation-->
+    <script src="../library/formvalidation-master/dist/js/formValidation.min.js"></script>
+    <script src="../library/formvalidation-master/dist/js/formValidation.js"></script>
+    <script src="../library/formvalidation-master/dist/js/framework/bootstrap.js"></script>
+    <!--Message Box-->
+    <script src="../scripts/scripts_Library/bootbox.min.js"></script>
+    <!--Custom Script: --------------------------->
+    
+
+    <!--Andrew's PlugIn-->
+    <script src="../scripts/scheduling.plugin.v13.js"></script>
+    
+                  
+    <!--Table support JS-->
+    <script src="../scripts/result.js"></script>
+    
+    <!--End Script Support:------------------------------------------------------>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

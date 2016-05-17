@@ -1,0 +1,28 @@
+********WebFinalSample*****************************************************************
+Version: 1.5 
+Modify date: 05/01/2016
+Editor: Kevin
+***************************************************************************************
+______Add Features_____________________________________________________________________
+
+------Java Script 
+<script src="../scripts/scheduling.plugin.v14.js"></script> 
+support under result
+Read building name and room number from plugin
+Change building name value from caps to lowercase.
+More log information under result.js for better testing 
+Improve clear method under result.js
+  
+
+------UI:
+1. Table now able to display building and room #
+2. Fix time formatting error.
+
+_____Deprecated Features_______________________________________________________________
+
+------UI:
+1. under Result Tab:
+
+Deprecated Link <script src="../scripts/scheduling.plugin.v11.js"></script> 
+
+

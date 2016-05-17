@@ -1,0 +1,100 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>about</title>
+
+    <!--Style Support--------------------------------------------------------------> 
+    <link rel="stylesheet" href="../library/bootstrap.3.3.6/styles/bootstrap.min.css"/>
+    <!--Validation-->
+    <link rel="stylesheet" href="../library/formvalidation-master/src/css/formValidation.css"/>
+    <!--Custom Style-->
+    <link rel="stylesheet" href="../css/style_index.css">
+    <!--End Style Support---------------------------------------------------------->
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        
+        <div class="jumbotron" style=" text-align:center">
+            <h1>Use Case Document <img src="../images/icon/Anim.gif" width="100" height="40" alt=""/></h1>
+            <h2>Introduction:</h2>
+            <p class="lead">This Use Case document has been developed for Saint Charles Community College’s (SCC) new class scheduling software. This software will replace the dated system that SCC currently uses to schedule classes each semester. SCC staff have requested a more efficient scheduling system in order to reduce the number of man-hours currently required to schedule classes. A.C.K.’s system will be designed to meet this need and improve the overall user experience.</p>
+</div>   
+
+                  
+        <div class="row">
+            <div class="col-lg-4">
+              <h2>Description</h2>
+              <p>Every semester new classes are added and removed from the curriculum. This program should schedule these classes and allow the user to see where a class is held, which classes were not able to be scheduled and if there is any space left for additional classes.</p>
+                <h2>Actors</h2>
+<p>Schedule Coordinator, department heads.</p>
+
+<h2>Exceptions</h2>
+          <p>If the user does not fill out required information when adding a class or room, the program will notify the user that it was unable to add the class or room and notify them of what information is missing.</p>
+
+          </div>
+          
+          
+            <div class="col-lg-4">
+                <h2>Pre-conditions</h2>
+                <p>User should know what classes they want to schedule for the semester, rooms that are available to be scheduled to, special requirements the class needs the room to have, special attributes the room has, and if a teacher of a class is only available between certain times.</p>
+<h2>Post-conditions</h2>
+<p>The program will allow the user to see the schedule of individual rooms, the location of individual classes, a list of scheduled classes, a list of unscheduled classes, a list of fully booked rooms and a list of rooms that still have space for new classes.</p>
+
+            </div>
+            <div class="col-lg-4">
+                <h2>Flow</h2>
+                <p>The user will enter the classes into the program, filling out information into a form for each class. The user will then enter the rooms into the program, filling out information into a form for each room. The user will then click schedule, which will then schedule the classes into rooms. The user will then be able to search rooms and classes.</p>
+                <h2>Alternative Flows</h2>
+                <p>If the program was unable to schedule a class or classes, then the program will allow the user to see a list of unscheduled classes. If rooms are not considered full by the program, the user will be able to see a list of rooms that can support added classes.</p>
+                
+                
+                
+            </div>
+        </div>
+
+           
+           
+<center><p><a class="btn btn-lg btn-success" href="#" role="button">Schedul today</a></p></center>
+
+        <!--info Notification Area-->
+        <div class="col-md-12 col-md-offset-2">
+            <div id="roInfo"></div>
+            </div>
+
+
+
+
+
+        </div><!--End container-->
+   
+
+
+
+
+
+    <!--Script Support:--------------------------------------------------------->
+    <!--Bootstrap -->
+    <script src="../library/google/scripts/jquery-2.2.3.min.js"></script>
+    <script src="../library/bootstrap.3.3.6/scripts/bootstrap.min.js"></script>
+     
+    <!--Validation-->
+    <script src="../library/formvalidation-master/dist/js/formValidation.min.js"></script>
+    <script src="../library/formvalidation-master/dist/js/formValidation.js"></script>
+    <script src="../library/formvalidation-master/dist/js/framework/bootstrap.js"></script>
+    <!--Message Box-->
+    <script src="../scripts/scripts_Library/bootbox.js"></script>
+   
+    <!--Custom Script: --------------------------->
+    <script src="../scripts/room.js"></script>
+    <script src="../scripts/validationRoom.js"></script>
+    <!--<!--End Script Support:-------------------------------------------------->
+
+    
+</body>
+</html>

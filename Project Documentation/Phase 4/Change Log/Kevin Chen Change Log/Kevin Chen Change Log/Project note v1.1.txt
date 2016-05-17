@@ -1,0 +1,45 @@
+********WebFinalSample*****************************************************************
+Version: 1.1 
+Modify date: 04/18/2016
+Editor: Kevin
+***************************************************************************************
+______Add Features_____________________________________________________________________
+
+------Java Script 
+More Organize code 
+More Detail on comments
+JQuery and JavaScript are separated from the UI code (HTML5)
+Improve random generator from 10 to 1 million 
+
+------UI:
+1. under Result Tab:
+Add Button UI: Clear all (clear local Storage data and result table data)
+Add Notification UI: on clear all selection
+
+2. under Room Tab:
+Add Check features: If Smart Board is check then Projector is check
+
+3. under Class Tab:
+Add Input Box: Credit Hour 
+Add Check Box: Week day (Mon-Sat total of 6 checkboxes)
+Add Check Box: Projector
+Add Check Box: Computers
+Add Check Box: Media Center
+Add auto dash (-) to Courses Number input box 
+Add warning box when user enter string in to Courses Number input box
+Add fade in-out red alert box when user click Add Class button before enter the require 	information
+Add fade in-out green alert box when data have successfully save
+If Smart Board is check then Projector is check
+
+
+_____Deprecated Features___________________________________________________________
+
+------UI:
+1. under Home Tab (index)
+Deprecated: Faculty Tab
+Deprecated: Schedule Tab
+
+2. under Class Tab:
+Deprecated: Faculty Name Label and Input box
+Deprecated: Change Duration to Availability 
+Deprecated: Building selection

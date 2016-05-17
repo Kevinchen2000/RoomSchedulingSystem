@@ -1,0 +1,153 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>schedule</title>
+
+
+    <link rel="stylesheet" href="../library/bootstrap.3.3.6/styles/bootstrap.min.css" />
+    <!--Validation-->
+    <link rel="stylesheet" href="../library/formvalidation-master/src/css/formValidation.css" />
+
+
+    <script src="../library/google/scripts/jquery.min.js"></script>
+    <script src="../library/bootstrap.3.3.6/scripts/bootstrap.min.js"></script>
+    <!--Validation-->
+    <script src="../library/formvalidation-master/dist/js/formValidation.min.js"></script>
+    <script src="../library/formvalidation-master/dist/js/formValidation.js"></script>
+    <script src="../library/formvalidation-master/dist/js/framework/bootstrap.js"></script>
+
+    <script src="../scripts/scripts_Library/bootbox.min.js"></script>
+    <!--My custom file-->
+    <link rel="stylesheet" href="../css/style_index.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <!--set middile step 1-->
+            <div class="col-md-4 col-md-offset-4">
+                <!--set the container in middile-->
+                <selection>
+                    <form class="panel panel-primary" id="schedule">
+                        <div class="panel-heading">Schedule</div>
+
+                        <div class="panel-body">
+
+
+
+
+
+
+                            <div class="form-group">
+                                <label class="control-label">Faculty Name:</label>
+
+                                <div class="col-lg-14">
+                                    <select name="cboPerson1" id="cboPerson"class="form-control">
+                                        <!--ID place here -->
+                                        <option value="">Select a name</option>
+                                        <option value="p1">Hillary Clinton</option>
+                                        <option value="p2">John Kasich</option>
+                                        <option value="p3">Bernie Sander</option>
+                                        <option value="p4">Donald Trump</option>
+                                        <option value="p5">Ben Carson</option>
+                                        <option value="p6">Ted Cruz</option>
+                                        <option value="p7">Chris Christie</option>
+                                        <option value="p8">Carly Fiorina</option>
+                                        <option value="p9">Jim Gilmore</option>
+                                        <option value="p10">Lindsey Graham</option>
+                                        <option value="p11">Mike Huckabee</option>
+                                        <option value="p12">Bobby Jindal</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-lg-0 col-lg-offset-0">  <!--Set both to 0 = max length-->
+                                <button type="submit" class="form-control btn btn-primary"
+                                        onclick="makeSchedule()"
+                                        
+                                        >Schedule</button>
+                            </div>
+
+
+                        </div> <!--End panel body-->
+
+                    </form> <!--End panel-primary-->
+
+                </selection>
+            </div>
+
+        </div> <!--End Panel Body-->
+
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#schedule').formValidation({
+                message: 'This value is not valid',
+                err: {
+                    container: 'tooltip'
+                },
+                icon: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+
+                    //---------------------------------------------------------------------------------------------------
+                    cboPerson1: {    //Target Name Require
+                        group: '.col-lg-14',      // Value must match with the target !!!
+                        validators: {
+                            notEmpty: {
+                                message: 'The name is required and cannot be empty' //Error Message 1
+                            },
+                        }
+                    },
+
+      
+                }
+            });
+        }
+);
+
+
+
+
+        bootbox.alert("Hello world!", function () {
+            Example.show("Hello world callback");
+        });
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

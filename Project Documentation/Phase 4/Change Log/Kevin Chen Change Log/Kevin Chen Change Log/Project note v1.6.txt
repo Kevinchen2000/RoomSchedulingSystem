@@ -1,0 +1,26 @@
+********WebFinalSample*****************************************************************
+Version: 1.5 
+Modify date: 05/01/2016
+Editor: Kevin
+***************************************************************************************
+______Add Features_____________________________________________________________________
+
+------Java Script 
+Auto load data and call schedule function on result.js when result.html is open
+  
+
+------UI:
+---Result tab
+1. Detail table available to show both school table and building table
+2. Fix Schedule button click duplication data error 
+---Class tab
+1. Now 1 credit hour class can be schedule 
+
+_____Deprecated Features_______________________________________________________________
+
+------UI:
+1. under Result Tab:
+
+
+
+

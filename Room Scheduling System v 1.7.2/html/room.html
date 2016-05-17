@@ -1,0 +1,238 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>room</title>
+
+    <!--Style Support--------------------------------------------------------------> 
+    <link rel="stylesheet" href="../library/bootstrap.3.3.6/styles/bootstrap.min.css"/>
+    <!--Validation-->
+    <link rel="stylesheet" href="../library/formvalidation-master/src/css/formValidation.css"/>
+    <!--Custom Style-->
+    <link rel="stylesheet" href="../css/style_index.css">
+    <!--End Style Support---------------------------------------------------------->
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="row"> <!--set middile step 1-->
+            <div class="col-md-4 col-md-offset-4"> <!--set the container in middile-->
+                <selection>
+
+                    <form class="panel panel-primary" id="addRoom" method="post"  >
+
+
+                        <div class="panel-heading">Enter Room Data</div> 
+
+                        <div class="panel-body"> 
+
+
+
+
+
+                       <!--COB Building-->
+
+                            <div class="form-group">
+                                <label class="control-label">Building:</label> 
+
+                                <div class="col-lg-14">  
+                                    <select name="cboBuilding1" class="form-control" id="cboBuilding"> <!--ID place here -->
+                                        <option value="">Select a building</option>
+                                        <option value="ADM">ADM</option>
+                                        <option value="TECH">TECH</option>
+                                        <option value="HUM">HUM</option>
+                                        <option value="SSB">SSB</option>
+                                        <option value="LRC">LRC</option>
+                                        <option value="FAB">FAB</option>
+                                        <option value="VAB">VAB</option>
+                                        <option value="CC">CC</option>
+                                        <option value="CDC">CDC</option>
+                                    </select>
+                                </div>
+                            </div>
+                 
+                      <!--Text box Student Capacity #-->
+
+
+                            <div class="form-group">
+                                <label class="control-label">Room Number:</label>
+
+                                <input type="number" class="form-control" placeholder="101" name="txtRoomNum1"
+                                       id="txtRoomNum" />
+                            </div>
+
+
+
+
+                            <div class="form-group">
+                                <label class="control-label">Student Capacity:</label>      
+                                                         
+                                    <input type="number" class="form-control" placeholder="25" name="txtStuCap1"
+                                           id="txtStuCap"/>
+                            </div>
+
+                     
+
+
+                        <!--COB Specialization-->
+
+                            <div class="form-group">
+                                <label class="control-label">Specialization</label>
+                                <div class="col-lg-14" >
+                                    <select name="cboSpec1" id="cboSpec" class="form-control">
+                                        <option value="">Select a specialization</option>
+                                        <option value="Lab">Lab</option>
+                                        <option value="Boxing">Boxing</option>
+                                        <option value="Dancing">Dancing</option>
+                                        <option value="Recording">Recording</option>
+                                        <option value="Photo_Processing">Photo Processing</option>
+                                        <option value="Workshop_Jewelry">Workshop Jewelry</option>
+                                        <option value="Workshop_Pottery">Workshop Pottery</option>
+                                        <option value="Workshop_Machinery">Workshop Machinery</option>
+                                    </select>
+                                </div>
+                            </div>
+                        
+
+
+
+
+
+
+
+                            <!-----------------Check Boxs Group Room Property--------------------------->
+                            <!--Check Boxs Computer-->
+                            <div class="form-group">
+                                <div class="col-lg-5 col-lg-offset-0">
+                                    <label>
+                                        <input type="checkbox" id="chkComputer" name="chkComputer1" value="computer"> Computer
+                                    </label>
+                                </div>
+                            </div>
+                            <!--Check Boxs Media Center-->
+                            <div class="form-group">
+                                <div class="col-lg-5 col-lg-offset-0">
+                                    <label>
+                                        <input type="checkbox" id="chkMediaCenter" name="chkMediaCenter1" value="MediaCenter"> Media Center
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!--Check Box Smart Board-->
+                            <div class="form-group">
+                                <div class="col-lg-5 col-lg-offset-0">
+                                    <label>
+                                        <input type="checkbox" id="chkSmartBoard" name="chkSmartBoard1" value="computer"> Smart Board
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!--Check Boxs Projecter-->
+                            <div class="form-group">
+                                <div class="col-lg-5 col-lg-offset-0">
+                                    <label>
+                                        <input type="checkbox" id="chkProjector" name="chkProjector1" value="computer"> Projector
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <!--End Check Boxs Group-->                            
+
+
+
+
+                            <div class="col-lg-6 col-lg-offset-2">
+                               <hr> <!--Line Break-->
+                            </div>
+                       
+                            <!--Button Add Room-->
+                                <div class="col-lg-0 col-lg-offset-0">
+                                    <!--Set both to 0 = max length-->
+                                    <button type="submit"   
+                                            id="btnAddRoom"
+                                            onclick="saveRoomData()"
+                                            class="form-control btn btn-primary"
+                                            >Add Room</button>
+                                </div>
+
+
+
+
+                              <!--End Button-->
+
+                            </div> <!--End panel body-->
+                        
+                        </form> <!--End panel-primary-->
+
+                </selection>
+            </div>
+
+
+
+                </div> <!--End Panel Body-->
+        
+
+
+
+
+        <!--info Notification Area-->
+        <div class="col-md-8 col-md-offset-2">
+            <div id="roInfo"></div>
+            </div>
+
+
+
+
+
+        </div><!--End container-->
+   
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Script Support:--------------------------------------------------------->
+    <!--Bootstrap -->
+    <script src="../library/google/scripts/jquery-2.2.3.min.js"></script>
+    <script src="../library/bootstrap.3.3.6/scripts/bootstrap.min.js"></script>
+     
+    <!--Validation-->
+    <script src="../library/formvalidation-master/dist/js/formValidation.min.js"></script>
+    <script src="../library/formvalidation-master/dist/js/formValidation.js"></script>
+    <script src="../library/formvalidation-master/dist/js/framework/bootstrap.js"></script>
+    <!--Message Box-->
+    <script src="../scripts/scripts_Library/bootbox.js"></script>
+   
+    <!--Custom Script: --------------------------->
+    <script src="../scripts/room.js"></script>
+    <script src="../scripts/validationRoom.js"></script>
+    <!--<!--End Script Support:-------------------------------------------------->
+
+    
+</body>
+</html>

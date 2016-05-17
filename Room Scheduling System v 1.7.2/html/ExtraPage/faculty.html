@@ -1,0 +1,296 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>faculty</title>
+
+
+    <link rel="stylesheet" href="../library/bootstrap.3.3.6/styles/bootstrap.min.css" />
+    <!--Validation-->
+    <link rel="stylesheet" href="../library/formvalidation-master/src/css/formValidation.css" />
+
+
+    <script src="../library/google/scripts/jquery.min.js"></script>
+    <script src="../library/bootstrap.3.3.6/scripts/bootstrap.min.js"></script>
+    <!--Validation-->
+    <script src="../library/formvalidation-master/dist/js/formValidation.min.js"></script>
+    <script src="../library/formvalidation-master/dist/js/formValidation.js"></script>
+    <script src="../library/formvalidation-master/dist/js/framework/bootstrap.js"></script>
+
+
+    <!--My custom file-->
+    <link rel="stylesheet" href="../css/style_index.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <!--set middile step 1-->
+            <div class="col-md-4 col-md-offset-4">
+                <!--set the container in middile 4:4 mind point-->
+                <selection>
+                    <form class="panel panel-primary" id="addFaculty">
+                        <div class="panel-heading">Enter Faculty Data</div>
+
+                        <div class="panel-body">
+
+
+
+
+
+                            <div class="form-group">
+                                <label class="control-label">First name:</label>
+
+                                <input type="text" class="form-control" 
+                                       id="txtFirName"
+                                       placeholder="Steve" name="txtFirName1" />
+                            </div>
+
+
+
+
+                            <div class="form-group">
+                                <label class="control-label">Last name:</label>
+
+                                <input type="text" class="form-control"
+                                    placeholder="Job" id="txtLasName"
+                                       name="txtLasName1" />
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <label class="control-label">Office Hour From (Person):</label>
+
+                                <div class="col-lg-14">
+                                    <select name="cboOfficeStartTime1" 
+                                            id="cboOfficeStartTime"
+                                            class="form-control">
+                                        <!--ID place here -->
+                                        <option value="">Select a starting time</option>
+                                        <option value="t7">07:00AM</option>
+                                        <option value="t71">07:30AM</option>
+                                        <option value="t8">08:00AM</option>
+                                        <option value="t81">08:30AM</option>
+                                        <option value="t9">09:00AM</option>
+                                        <option value="t91">09:30AM</option>
+                                        <option value="t10">10:00PM</option>
+                                        <option value="t101">10:30PM</option>
+                                        <option value="t11">11:00PM</option>
+                                        <option value="t111">11:30PM</option>
+                                        <option value="t12">12:00PM</option>
+                                        <option value="t121">12:30PM</option>
+                                        <option value="t13">01:00PM</option>
+                                        <option value="t131">01:30PM</option>
+                                        <option value="t14">02:00PM</option>
+                                        <option value="t141">02:30PM</option>
+                                        <option value="t15">03:00PM</option>
+                                        <option value="t151">03:30PM</option>
+                                        <option value="t16">04:00PM</option>
+                                        <option value="t161">04:30PM</option>
+                                        <option value="t17">05:00PM</option>
+                                        <option value="t171">05:30PM</option>
+                                        <option value="t18">06:00PM</option>
+                                        <option value="t181">06:30PM</option>
+                                        <option value="t19">07:00PM</option>
+                                        <option value="t191">07:30PM</option>
+                                        <option value="t20">08:00PM</option>
+                                        <option value="t201">08:30PM</option>
+                                        <option value="t21">09:00PM</option>
+                                        <option value="t211">09:30PM</option>
+                                        <option value="t22">10:00PM</option>
+                                        <option value="t221">10:30PM</option>
+                                        <option value="t23">11:00PM</option>
+                                        <option value="t231">11:30PM</option>
+                                        <option value="t24">12:00PM</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <label class="control-label">Office Hour To (Person):</label>
+
+                                <div class="col-lg-14">
+                                    <select name="cboOfficeEndTime"
+                                            id="cboOfficeEndTime"
+                                             class="form-control">
+                                        <!--ID place here -->
+                                        <option value="">Select a ending time</option>
+                                        <option value="t7">07:00AM</option>
+                                        <option value="t71">07:30AM</option>
+                                        <option value="t8">08:00AM</option>
+                                        <option value="t81">08:30AM</option>
+                                        <option value="t9">09:00AM</option>
+                                        <option value="t91">09:30AM</option>
+                                        <option value="t10">10:00PM</option>
+                                        <option value="t101">10:30PM</option>
+                                        <option value="t11">11:00PM</option>
+                                        <option value="t111">11:30PM</option>
+                                        <option value="t12">12:00PM</option>
+                                        <option value="t121">12:30PM</option>
+                                        <option value="t13">01:00PM</option>
+                                        <option value="t131">01:30PM</option>
+                                        <option value="t14">02:00PM</option>
+                                        <option value="t141">02:30PM</option>
+                                        <option value="t15">03:00PM</option>
+                                        <option value="t151">03:30PM</option>
+                                        <option value="t16">04:00PM</option>
+                                        <option value="t161">04:30PM</option>
+                                        <option value="t17">05:00PM</option>
+                                        <option value="t171">05:30PM</option>
+                                        <option value="t18">06:00PM</option>
+                                        <option value="t181">06:30PM</option>
+                                        <option value="t19">07:00PM</option>
+                                        <option value="t191">07:30PM</option>
+                                        <option value="t20">08:00PM</option>
+                                        <option value="t201">08:30PM</option>
+                                        <option value="t21">09:00PM</option>
+                                        <option value="t211">09:30PM</option>
+                                        <option value="t22">10:00PM</option>
+                                        <option value="t221">10:30PM</option>
+                                        <option value="t23">11:00PM</option>
+                                        <option value="t231">11:30PM</option>
+                                        <option value="t24">12:00PM</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                            <div class="col-lg-0 col-lg-offset-0"> <!--Set both to 0 = max length-->
+                                <button type="submit" onclick="savePersonData()"
+                                        class="form-control btn btn-primary">Add Person</button>
+                            </div>
+
+
+                        </div>
+
+                    </form>
+
+                </selection>
+            </div>
+
+        </div> <!--End Panel Body-->
+
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#addFaculty').formValidation({
+                message: 'This value is not valid',
+                err: {
+                    container: 'tooltip'
+                },
+                icon: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+
+                    //---------------------------------------------------------------------------------------------
+                    txtFirName1: {    //Target Name Require
+                        validators: {
+                            notEmpty: {
+                                message: 'The first name is required and cannot be empty'
+                            },
+                            stringCase: {
+                                message: 'The first name must contain upper case characters only',
+                                case: 'upper'
+                            },
+                            regexp: {
+                                regexp: /^[A-Z\s]+$/i,
+                                message: 'The first name can only consist of alphabetical characters and spaces'
+                            }
+                        }
+                    },
+
+                    //---------------------------------------------------------------------------------------------
+                    txtLasName1: {    //Target Name Require
+                        validators: { 
+                                notEmpty: {
+                                    message: 'The last name is required and cannot be empty'
+                                },
+                                stringCase: {
+                                    message: 'The last name must contain upper case characters only',
+                                    case: 'upper'
+                                },
+                                regexp: {
+                                    regexp: /^[A-Z\s]+$/i,
+                                    message: 'The last name can only consist of alphabetical characters and spaces'
+                                }
+                            }
+                        },
+
+                        //---------------------------------------------------------------------------------------------------
+                        cboOfficeStartTime1: {    //Target Name Require
+                            group: '.col-lg-14',      // Value must match with the target !!!
+                            validators: {
+                                notEmpty: {
+                                    message: 'The class starting time is required and cannot be empty' //Error Message 1
+                                },
+                            }
+                        },
+
+                        //---------------------------------------------------------------------------------------------------
+                        cboOfficeEndTime1: {    //Target Name Require
+                            group: '.col-lg-14',      // Value must match with the target !!!
+                            validators: {
+                                notEmpty: {
+                                    message: 'The class ending time is required and cannot be empty' //Error Message 1
+                                },
+                            }
+                        },
+
+
+
+
+                    
+                }
+            });
+        }
+);
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
